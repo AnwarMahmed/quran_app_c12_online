@@ -7,4 +7,5 @@ class AssetsManager {
   static const String radioIcon = "${bass}radio_icon.png";
   static const String sebhaIcon = "${bass}sebha_icon.png";
   static const String headerImage = "${bass}quran_header_image.png";
+  static const String hadithHeaderImage = "${bass}hadith_header_image.png";
 }

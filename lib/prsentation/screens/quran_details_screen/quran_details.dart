@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:test1/core/assets_manager.dart';
-import 'package:test1/core/color_manager.dart';
 import 'package:test1/prsentation/screens/home/tabs/quran_tabs/quran_tabs.dart';
 import 'package:test1/prsentation/screens/quran_details_screen/widgets/verses_widget.dart';
 
@@ -28,7 +27,9 @@ class _QuranDetailsScreenState extends State<QuranDetailsScreen> {
             ),
             body: verses.isEmpty
                 ? Center(
-                    child: CircularProgressIndicator(),
+                    child: CircularProgressIndicator(
+                      color: Theme.of(context).primaryColor,
+                    ),
                   )
                 : ListView.builder(
                     itemBuilder: (context, index) =>
